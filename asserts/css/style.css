@@ -1,0 +1,137 @@
+@import url(/asserts/css/reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* sehifenin navbari start */
+
+* {
+    outline: 1px solid red;
+}
+
+body{
+    font-family: 'roboto', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 112.5px;
+    padding-top: 41px;
+}
+
+.fa-bars{
+    display: none;
+    
+}
+
+
+
+header nav a{
+    color: #222;
+    padding: 7px;
+}
+
+@media(max-width:832px){
+    .fa-bars{
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+nav{
+    display: none;
+}
+}
+/* @media(max-width:) */
+
+/* sehifenin navbari end */
+
+/* sehifenin introsu start */
+
+
+.introduction{
+    display: flex;
+    justify-content: space-between;
+    padding-left:112.5px;
+    padding-right: 112.5px;
+    flex-wrap: wrap;
+}
+
+.introduction .left-side{
+    padding-top: 117px;
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction h1{
+    font-size: 72px;
+    font-weight: 700;
+    /* line-height: 82.5px; */
+    letter-spacing: 2px;
+}
+.introduction .left-side h1 span{
+    color: #ff8a56;
+}
+.introduction .left-side p{
+    color: #666;
+    margin-top: 34px;
+    margin-bottom: 34px;
+}
+.introduction .left-side button{
+    background-color: rgb(0, 0, 0);
+    width: 151px;
+    height: 58px;
+    color: #fff;
+    border: none;
+
+}
+.introduction .left-side a{
+    padding-left: 12px;
+}
+.introduction .button-groups{
+    display: flex;
+    align-items: center;
+}
+.introduction a{
+    color: #000;
+}
+
+@media(max-width:1427px) and (min-width:836px){
+    .introduction .left-side{
+        flex-basis: 100%;
+        align-items: center;
+
+    }
+    .introduction .rigt-side{
+        margin: 0px;
+    }
+}
+@media(max-width:768px){
+
+    .introduction{
+        padding-left: 10px;
+    }
+    .introduction .left-side{
+        min-width: 500px;
+    }
+
+
+    .introduction .left-side h1{
+        font-size: 48px;
+        text-align: center;
+    }
+    .introduction .left-side p{
+        text-align: center;
+    }
+    .button-groups{
+        margin: 20px;
+    }
+    .rigt-side{
+        margin: auto;
+    }
+    
+}
+
+
